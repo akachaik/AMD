@@ -46,5 +46,13 @@
     "ProductId": 6,
     "ProductName": "New product",
     "ReleaseDate": "2015-06-28T18:55:12.2859165+07:00"
+  },
+  {
+    "Description": "TEest 3",
+    "Price": 0.0,
+    "ProductCode": "NEW3",
+    "ProductId": 7,
+    "ProductName": "up23",
+    "ReleaseDate": "2015-06-28T19:08:46.3174765+07:00"
   }
 ]
