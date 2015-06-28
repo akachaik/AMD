@@ -1,27 +1,50 @@
-﻿ [
+[
   {
-    "productId": 1,
-    "productName": "aa Leaf Rake",
-    "productCode": "GDF-0011",
-    "releaseDate": "March 19, 2009",
-    "description": "Leaf rake with 48 inch wooden handle.",
-    "price": 19.95
+    "Description": "Leaf rake with 48 inch wooden handle.",
+    "Price": 19.95,
+    "ProductCode": "GDF-0011",
+    "ProductId": 1,
+    "ProductName": "aa Leaf Rake",
+    "ReleaseDate": "2009-03-19T00:00:00"
   },
   {
-    "productId": 2,
-    "productName": "bb Leaf Rake 2",
-    "productCode": "GDN-0012",
-    "releaseDate": "March 20, 2009",
-    "description": "Leaf rake with 48 inch wooden handle.",
-    "price": 29.95
-  }, 
+    "Description": "Leaf rake with 48 inch wooden handle.",
+    "Price": 29.95,
+    "ProductCode": "GDN-0012",
+    "ProductId": 2,
+    "ProductName": "bb Leaf Rake 2",
+    "ReleaseDate": "2009-03-20T00:00:00"
+  },
   {
-                "productId": 3,
-                "productName": "cc Leaf Rake",
-                "productCode": "GDD-0013",
-                "releaseDate": "March 19, 2009",
-                "description": "Leaf rake with 48 inch wooden handle.",
-                "price": 39.95
-            }
-
-        ]
+    "Description": "Leaf rake with 48 inch wooden handle.",
+    "Price": 39.95,
+    "ProductCode": "GDD-0013",
+    "ProductId": 3,
+    "ProductName": "cc Leaf Rake",
+    "ReleaseDate": "2009-03-19T00:00:00"
+  },
+  {
+    "Description": "Leaf rake with 48 inch wooden handle.",
+    "Price": 39.95,
+    "ProductCode": "GDD-0013",
+    "ProductId": 4,
+    "ProductName": "cc Leaf Rake 4",
+    "ReleaseDate": "2009-03-19T00:00:00"
+  },
+  {
+    "Description": "Leaf rake with 48 inch wooden handle.",
+    "Price": 39.95,
+    "ProductCode": "GDD-0013",
+    "ProductId": 5,
+    "ProductName": "cc Leaf upd3",
+    "ReleaseDate": "2009-03-19T00:00:00"
+  },
+  {
+    "Description": "Test new product",
+    "Price": 0.0,
+    "ProductCode": "NEW 01",
+    "ProductId": 6,
+    "ProductName": "New product",
+    "ReleaseDate": "2015-06-28T18:55:12.2859165+07:00"
+  }
+]
