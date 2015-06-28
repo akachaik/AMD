@@ -1,0 +1,36 @@
+﻿<div class="panel panel-info" ng-controller="ProductListCtrl as vm">
+    <div class="panel-heading" style="font-size: large">
+        Product List
+
+        <div style="text-align: right; float: right;">
+            <input type="text" ng-model="vm.searchCriteria" ng-disabled="vm.loading" />
+            <button class="btn btn-primary" ng-disabled="vm.loading" ng-click="vm.search()">Search</button>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div ng-show="vm.loading" >
+            Loading ...
+        </div>
+        <table class="table table-striped table-condensed" ng-if="!vm.loading">
+            <thead>
+                <tr>
+                    <td>Product</td>
+                    <td>Code</td>
+                    <td>Available</td>
+                    <td>Price</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in vm.products">
+                    <td>{{ product.productName}}</td>
+                    <td>{{ product.productCode}}</td>
+                    <td>{{ product.releaseDate}}</td>
+                    <td>{{ product.price | currency }}</td>
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

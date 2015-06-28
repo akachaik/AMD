@@ -1,0 +1,27 @@
+﻿ [
+  {
+    "productId": 1,
+    "productName": "aa Leaf Rake",
+    "productCode": "GDF-0011",
+    "releaseDate": "March 19, 2009",
+    "description": "Leaf rake with 48 inch wooden handle.",
+    "price": 19.95
+  },
+  {
+    "productId": 2,
+    "productName": "bb Leaf Rake 2",
+    "productCode": "GDN-0012",
+    "releaseDate": "March 20, 2009",
+    "description": "Leaf rake with 48 inch wooden handle.",
+    "price": 29.95
+  }, 
+  {
+                "productId": 3,
+                "productName": "cc Leaf Rake",
+                "productCode": "GDD-0013",
+                "releaseDate": "March 19, 2009",
+                "description": "Leaf rake with 48 inch wooden handle.",
+                "price": 39.95
+            }
+
+        ]
