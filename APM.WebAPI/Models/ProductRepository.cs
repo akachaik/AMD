@@ -36,7 +36,7 @@ namespace APM.WebAPI.Models
             product.ProductId = maxId + 1;
             products.Add(product);
 
-            writeDate(products);
+            WriteDate(products);
 
             return product;
         }
@@ -54,12 +54,12 @@ namespace APM.WebAPI.Models
                 return null;
             }
 
-            writeDate(products);
+            WriteDate(products);
 
             return product;
         }
 
-        private bool writeDate(List<Product> products)
+        private static bool WriteDate(List<Product> products)
         {
             var filePath = HostingEnvironment.MapPath(@"~/App_Data/product.json");
             var json = JsonConvert.SerializeObject(products, Formatting.Indented);
