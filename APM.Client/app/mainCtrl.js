@@ -66,6 +66,10 @@
 
             });
         };
+
+        vm.logout = function() {
+            currentUser.clearProfile();
+        };
     }
 
 })();

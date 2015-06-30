@@ -22,9 +22,16 @@
             return profile;
         }
 
+        var clearProfile = function() {
+            profile.username = "";
+            profile.token = "";
+            profile.isLoggedId = false;
+        };
+
         return {
             setProfile: setProfile,
-            getProfile: getProfile
+            getProfile: getProfile,
+            clearProfile: clearProfile
         };
     }
 
