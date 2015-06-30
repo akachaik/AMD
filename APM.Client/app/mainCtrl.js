@@ -4,12 +4,14 @@
     angular
         .module("productManagement")
         .controller("MainCtrl",
-        ["userAccount", MainCtrl]);
+        ["userAccount", "currentUser", MainCtrl]);
 
 
-    function MainCtrl(userAccount) {
+    function MainCtrl(userAccount, currentUser) {
         var vm = this;
-        vm.isLoggedIn = false;
+        vm.isLoggedIn = function() {
+            return currentUser.getProfile().isLoggedId;
+        };
         vm.message = '';
         vm.userData = {
             userName: '',
@@ -47,13 +49,11 @@
             vm.userData.userName = vm.userData.email;
 
             userAccount.login.loginUser(vm.userData, function(data) {
-                vm.isLoggedIn = true;
                 vm.message = '';
                 vm.password = '';
-                vm.token = data.access_token;
+                currentUser.setProfile(vm.userData.userName, data.access_token);
             }, function(response) {
                 vm.password = '';
-                vm.isLoggedIn = false;
                 vm.message = response.statusText + "\r\n";
                 if (response.data && response.data.exceptionMessage)
                     vm.message += response.data.exceptionMessage;
